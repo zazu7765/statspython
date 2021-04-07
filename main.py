@@ -27,7 +27,7 @@ def conference(coworkers,workers):
 
 def examWriting(exams,examSlots):
 	#more factorials
-	a = math.factorial(examSlots)/math.factorial(examSlots-exams)
+	a = math.comb(examSlots,exams)
 	return a
 
 def pizzaToppings(mushrooms,pineapple,both):
@@ -89,7 +89,7 @@ def bloodPressure(bottom,top):
 def tallGirl(height, mu, sigma):
 	probability = math.erf((height - mu) / (sigma*math.sqrt(2)))
 	#plus 0.5 again
-	probabilityTaller = 1 - (probability/2+0.5)
+	probabilityTaller = 1 - (probability / 2+0.5)
 	return round(probabilityTaller,3)
 
 def quizShow(mu, sigma, year):
